@@ -12,7 +12,7 @@ def driver(request):
     if browser == "firefox":
         firefox_options = FirefoxOptions()
         firefox_options.add_argument("--headless")
-        driver = webdriver.Firefox()
+        driver = webdriver.Firefox(options=firefox_options)
     else:
         options = Options()
         options.add_argument("--guest")
