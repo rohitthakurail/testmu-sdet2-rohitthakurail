@@ -24,3 +24,10 @@ jobs:
       - name: Run Tests
         run: |
           pytest
+
+      - name: Upload Reports Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: reports/
