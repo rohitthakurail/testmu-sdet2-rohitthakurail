@@ -49,3 +49,81 @@ testmu-sdet2-rohitthakurail/
 ├── requirements.txt
 └── README.md
 ```
+
+# Project Setup
+
+## 1. Clone Repository
+
+```bash
+git clone https://github.com/rohitthakurail/testmu-sdet2-rohitthakurail.git
+cd testmu-sdet2-rohitthakurail
+```
+
+## 2. Create Virtual Environment
+
+### Windows
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+### Linux/Mac
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+## 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+---
+
+# Running Tests
+
+## Run All Tests
+```bash
+pytest
+```
+
+## Run UI Tests
+```bash
+pytest tests/ui -m ui
+```
+
+## Run API Tests
+```bash
+pytest tests/api -m api
+```
+
+## Run Integration Tests
+```bash
+pytest tests/integration -m integration
+```
+
+---
+
+# Reporting Features
+
+- Screenshots on UI failure
+- Logs attached to report.html
+- API response logging
+- HTML reporting
+
+---
+
+# GitHub Actions CI
+
+Pipeline automatically:
+- Installs dependencies
+- Runs tests
+- Generates artifacts
+- Uploads reports
+
+Location:
+```text
+.github/workflows/ci.yml
+```
+
+---
