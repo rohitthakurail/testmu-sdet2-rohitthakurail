@@ -6,10 +6,7 @@ venv/
 # IDE files
 .vscode/
 .idea/
-
-# Reports
-allure-results/
-allure-report/
+__pycache__/
 
 # Environment variables
 .env

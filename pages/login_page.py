@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium.common import NoAlertPresentException
 from pages.base_page import BasePage
 
 class LoginPage(BasePage):
@@ -15,3 +16,12 @@ class LoginPage(BasePage):
         self.type(self.USERNAME_LOC, username)
         self.type(self.PASSWORD_LOC, password)
         self.click(self.LOGIN_BTN_LOC)
+        try:
+            alert = self.driver.switch_to.alert
+            alert.accept()
+
+        except NoAlertPresentException:
+            pass
+
+    def verify_on_login_page(self):
+        assert self.get_element(self.LOGIN_BTN_LOC).get_attribute('value') == 'Login', "Login Button not found!"

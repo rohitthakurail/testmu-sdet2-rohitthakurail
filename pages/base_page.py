@@ -21,7 +21,7 @@ class BasePage:
         :param locator: By
         :return: List[WebElement]
         """
-        return self.driver.find_elements(locator)
+        return self.driver.find_elements(*locator)
 
     def click(self, locator):
         """

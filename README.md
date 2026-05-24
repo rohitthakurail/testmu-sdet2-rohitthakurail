@@ -4,7 +4,6 @@ SDET-2 | Quality Engineering Challenge
 ## Framework Goals
 This framework is designed to:
 - Support UI, API and Integration testing in a single repository
-- Reduce flaky tests through reusable waits and retries
 - Provide readable reports with screenshots/logs
 - Enable fast onboarding for new QA engineers
 - Support CI execution using GitHub Actions

@@ -1,4 +1,16 @@
-{
-    "api_username": "admin",
-    "api_password": "password123"
+{   "admin_credentials": {
+    "username": "admin",
+    "password": "password123"
+    },
+    "create_booking_data": {
+    "firstname" : "Jim",
+    "lastname" : "Brown",
+    "totalprice" : 999,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2027-01-01",
+        "checkout" : "2028-01-01"
+    },
+    "additionalneeds" : "Breakfast"
+    }
 }
