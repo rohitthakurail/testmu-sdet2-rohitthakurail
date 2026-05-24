@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# Reports
+reports/
+allure-results/
+allure-report/
+
+# Environment variables
+.env
